@@ -1,0 +1,25 @@
+:root{
+    --menu1: #E0E0E0;
+
+    --logo:  ;
+
+    --fonte1: #3d4346;
+    --fonte2: #222222;
+
+    --fundoprincipal: #f4f4f4;
+    --fundosecundario: #EBEBEB;
+    
+    --azultitulo: var(--azul1);
+    --azuldestaque: var(--azul2);
+    --azulsubtitulo: var(--azul3);
+    
+    --cinza1: #8b8c89;
+    --cinza2: #d1e7fc;
+
+    --azul1: #215c81;
+    --azul2: #5fa8d3;
+    --azul3: #cae9ff;
+    --azul4: #EBF7FF;
+    --azul5: #a3c6e0;
+    --azul6: #6888A1;
+} 
