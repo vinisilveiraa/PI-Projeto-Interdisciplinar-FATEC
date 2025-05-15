@@ -17,7 +17,11 @@
         <link rel="stylesheet" href="css/stylehome.css">
 
         <style>
-            .box-form{
+            body {
+                background-color: #f8f9fa;
+            }
+
+            .box-form {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -25,11 +29,12 @@
 
             }
 
-            .box-form h1{
+            .box-form h1 {
                 color: #5fa8d3;
+                font-weight: 600;
             }
 
-            .box-form a{
+            .box-form a {
                 color: #5fa8d3;
             }
         </style>
@@ -49,7 +54,8 @@
             </div>
 
             <!-- botão do menu hamburguer -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -79,20 +85,20 @@
     <div class="container">
         <div class="row">
             <div class="box-form">
-                <form action="#" method="post"class="col-5 p-4">
+                <form action="#" method="post" class="col-12 col-md-5 p-4">
 
                     <h1 class="text-center  mb-2">CADASTRO</h1>
 
                     <label for="email">E-mail</label>
-                    <input type="email"class="form-control mb-4"placeholder="email@example.com">
+                    <input type="email" class="form-control mb-4" placeholder="email@example.com">
 
                     <label for="senha">Senha</label>
-                    <input type="password"class="form-control mb-4">
+                    <input type="password" class="form-control mb-4">
 
                     <label for="confirm-senha">Confirmar a senha</label>
-                    <input type="password"class="form-control mb-4">
-                    
-                    <input type="submit"class="btn btn-primary form-control mb-4">
+                    <input type="password" class="form-control mb-4">
+
+                    <input type="submit" class="btn btn-primary form-control mb-4">
 
                     <a href="index.html">Já tem conta ?</a>
                 </form>
@@ -116,11 +122,11 @@
 
         <div class="apoio">
             <span>Deseja apoiar o projeto ?</span>
-            <img src="imgs/qrcode.png"style="width: 100px;" alt="">
+            <img src="imgs/qrcode.png" style="width: 100px;" alt="">
         </div>
 
         <style>
-            footer{
+            footer {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -130,15 +136,15 @@
             }
 
             @media (max-width: 750px) {
-                footer{
+                footer {
                     flex-direction: column;
                     gap: 20px;
                 }
             }
 
-            
 
-            footer .logo{
+
+            footer .logo {
                 display: flex;
                 align-items: center;
                 gap: 5px;
@@ -147,18 +153,18 @@
                 color: #222222;
             }
 
-            footer .colaboradores{
+            footer .colaboradores {
                 display: flex;
                 flex-direction: column;
                 color: #222222;
                 text-align: center;
             }
 
-            footer .apoio img{
+            footer .apoio img {
                 margin: 0 auto;
             }
 
-            footer .apoio a{
+            footer .apoio a {
                 color: #222222;
             }
         </style>

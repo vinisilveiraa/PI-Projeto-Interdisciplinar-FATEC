@@ -12,22 +12,35 @@
     <link rel="stylesheet" href="css/stylehome.css">
 
     <style>
-        .box-form{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 1vh;
+        body {
+            background-color: #f8f9fa;
+        }
 
-            }
+        .box-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1vh;
 
-            .box-form h1{
-                color: #5fa8d3;
-            }
+        }
+
+        .box-form h1 {
+            color: #5fa8d3;
+            font-weight: 600;
+        }
 
         .form-check {
             color: var(--azuldestaque);
             display: flex;
             justify-content: space-between;
+        }
+
+        @media (max-width: 750px){
+            .form-check{
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+            }
         }
 
         .form-check a {
@@ -86,7 +99,7 @@
     <div class="container">
         <div class="row">
             <div class="box-form">
-                <form action="#" method="post" class="col-5 p-4">
+                <form action="#" method="post" class="col-12 col-md-5 p-4">
 
                     <h1 class="text-center  mb-2">LOGIN</h1>
 
@@ -98,7 +111,7 @@
 
                     <input type="submit" class="btn btn-primary form-control mb-4">
 
-                    <div class="mb-3 form-check w-100">
+                    <div class="mb-3 form-check">
                         <div>
                             <input type="checkbox" class="form-check-input" id="manterConectado" name="manterConectado">
                             <label class="form-check-label" for="manterConectado">Manter Conectado?</label>
@@ -106,6 +119,7 @@
 
                         <a href="create-account.html">Ainda não tem conta ?</a>
                     </div>
+
                 </form>
             </div>
         </div>
@@ -127,11 +141,11 @@
 
         <div class="apoio">
             <span>Deseja apoiar o projeto ?</span>
-            <img src="imgs/qrcode.png"style="width: 100px;" alt="">
+            <img src="imgs/qrcode.png" style="width: 100px;" alt="">
         </div>
 
         <style>
-            footer{
+            footer {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -141,15 +155,15 @@
             }
 
             @media (max-width: 750px) {
-                footer{
+                footer {
                     flex-direction: column;
                     gap: 20px;
                 }
             }
 
-            
 
-            footer .logo{
+
+            footer .logo {
                 display: flex;
                 align-items: center;
                 gap: 5px;
@@ -158,18 +172,18 @@
                 color: #222222;
             }
 
-            footer .colaboradores{
+            footer .colaboradores {
                 display: flex;
                 flex-direction: column;
                 color: #222222;
                 text-align: center;
             }
 
-            footer .apoio img{
+            footer .apoio img {
                 margin: 0 auto;
             }
 
-            footer .apoio a{
+            footer .apoio a {
                 color: #222222;
             }
         </style>
