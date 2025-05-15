@@ -20,6 +20,23 @@
                 max-width: 90vw !important;
             }   
         }
+
+        .form-check{
+            color: var(--azuldestaque);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-check a{
+            color:  var(--azuldestaque);
+        }
+
+        .form-check a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+            
     </style>
 </head>
 
@@ -64,22 +81,29 @@
         </div>
     </header>
 
-    <main class="d-flex justify-content-center align-items-center py-4">
+    <main class="d-flex justify-content-center align-items-center py-4">              
+        <form action="#" method="post" class="w-100 border p-4 border rounded-2" id="form">
 
-        <form action="" method="post" class="w-100 border p-4 border rounded-2" id="form">
+            <h1 class="menu-login text-center mb-2">CONECTE</h1>
+
             <div class="mb-3 w-100">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com">
             </div>
               
             <div class="mb-3 w-100">
                 <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                <input type="password" class="form-control" id="senha" name="senha">
             </div>
 
             <div class="mb-3 form-check w-100">
-                <input type="checkbox" class="form-check-input" id="manterConectado" name="manterConectado">
-                <label class="form-check-label" for="manterConectado">Manter Conectado?</label>
+                <div>
+                    <input type="checkbox" class="form-check-input" id="manterConectado" name="manterConectado">
+                    <label class="form-check-label" for="manterConectado">Manter Conectado?</label>
+                </div>
+
+
+                <a href="#">Ainda não tem conta ?</a>
             </div>
 
             <button type="submit" class="btn btn-primary w-100">Login</button>

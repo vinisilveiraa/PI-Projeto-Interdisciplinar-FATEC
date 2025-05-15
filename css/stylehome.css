@@ -71,6 +71,10 @@ body {
     text-decoration-thickness: 2px;
 }
 
+.menu-login{
+    color: var(--azuldestaque);
+}
+
 .menu-login a {
     background: var(--azuldestaque);
     color: var(--fonte1);
