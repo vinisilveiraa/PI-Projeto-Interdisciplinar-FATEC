@@ -16,7 +16,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 3vh;
+                margin-top: 1vh;
 
             }
 
@@ -111,50 +111,71 @@
         </div>
     </div>
 
+    <footer>
+
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+            <span>Conecte</span>
+        </div>
+
+        <div class="colaboradores">
+            <h5>Colaboradores do projeto</h5>
+            <span><a href="https://github.com/vinisilveiraa">https://github.com/vinisilveiraa</a></span>
+            <span><a href="https://github.com/vinisilveiraa">https://github.com/lucas-catto</a></span>
+            <span><a href="https://github.com/vinisilveiraa">https://github.com/WilliamMatiasDeOliveira</a></span>
+        </div>
+
+        <div class="apoio">
+            <span>Deseja apoiar o projeto ?</span>
+            <img src="imgs/qrcode.png"style="width: 100px;" alt="">
+        </div>
+
+        <style>
+            footer{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 20px 0px;
+                background-color: #E0E0E0;
+            }
+
+            @media (max-width: 750px) {
+                footer{
+                    flex-direction: column;
+                    gap: 20px;
+                }
+            }
+
+            
+
+            footer .logo{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-family: poppins;
+                font-weight: 600;
+                color: #222222;
+            }
+
+            footer .colaboradores{
+                display: flex;
+                flex-direction: column;
+                color: #222222;
+                text-align: center;
+            }
+
+            footer .apoio img{
+                margin: 0 auto;
+            }
+
+            footer .apoio a{
+                color: #222222;
+            }
+        </style>
 
 
 
-
-
-
-
-
-    <footer class="footer-bg">
-        <section class="footer">
-            <div class="footer1">
-                <a href="#"><img src="imgs/logo.png" alt="logo">LOGO</a>
-                <p>frase bonita!</p>
-            </div>
-            <ul class="footer2">
-                <li>
-                    <h2>Social</h2>
-                    <ul class="container">
-                        <li><a href="#">Whatsapp</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                    </ul>
-                </li>
-                <li class="footer-sobre">
-                    <h2>Informação</h2>
-                    <ul class="container h-container">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Sobre Nós</a></li>
-                        <li><a href="#">Como Funciona</a></li>
-                        <li><a href="#">Privacidade</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                    </ul>
-                </li>
-                <li id="contato">
-                    <h2>Contato</h2>
-                    <ul class="container">
-                        <li><a href="#">contato@nomeempresa.com</a></li>
-                        <li><a href="#">+55 (XX) XXXX-XXXX</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
